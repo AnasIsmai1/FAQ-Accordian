@@ -1,0 +1,9 @@
+<div class="questions">
+    <div class="question">
+        <h2>{{item.ques}}</h2>
+        <img src="{{ (!isShown)? '../../../assets/images/icon-plus.svg' : '../../../assets/images/icon-minus.svg'}}" alt="{{!isShown? 'plus icon' : 'minus icon'}}" (click)="toShow()">
+    </div>
+    <div [ngClass]="{'answer': true, 'hidden': !isShown}">
+        <p>{{item.ans}}</p>
+    </div>
+</div>

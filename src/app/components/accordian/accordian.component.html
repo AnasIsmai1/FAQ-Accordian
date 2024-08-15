@@ -1,0 +1,9 @@
+<div class="accordian">
+    <div class="title">
+        <img src="../../../assets/images/icon-star.svg" alt="icon used to expand or collapse the accordian questionaire">
+        <h1>FAQs</h1>
+    </div>
+    <div class="questions">
+        <app-questions *ngFor="let item of questions" [item]="item" ></app-questions>
+    </div>
+</div>

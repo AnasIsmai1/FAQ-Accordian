@@ -1,0 +1,30 @@
+app-accordian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+    transform: translateY(275px);
+}
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 1400px) {
+    app-accordian {
+        transform: translateY(200px);
+    }
+}
+
+@media (max-width: 1200px) {
+    app-accordian {
+        transform: translateY(150px);
+    }
+}
+
+@media (max-width: 800px) {
+    app-accordian {
+        transform: translateY(100px);
+    }
+}

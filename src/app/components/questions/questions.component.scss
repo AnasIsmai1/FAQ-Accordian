@@ -1,0 +1,39 @@
+@import "../../../styles";
+
+.questions {
+    border-bottom: solid 1px $hover-state-clr;
+    display: flex;
+    flex-direction: column;
+    .question {
+        padding-block: 1rem;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            cursor: pointer;
+            font-weight: $mid-font-weight;
+            font-size: 1.125rem;
+        }
+        h2:hover {
+            color: #AD28EB;
+        }
+        img {
+            cursor: pointer;
+            width: 25px;
+        }
+    }
+    .answer {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: .5s ease;
+        p {
+            padding-block: 1rem;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: $light-font-weight;
+            color: $default-font-clr;
+        }
+    }
+    .hidden {
+        max-height: 0;
+    }
+}

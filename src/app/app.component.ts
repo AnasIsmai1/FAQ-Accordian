@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '03-test';
+
+
+  isMobile : boolean = false;
+
+  checkSize(e: any) {
+
+    if(e.target.innerWidth < 800) {
+      this.isMobile = true;
+    }else {
+      this.isMobile = false;
+    }
+  }
 }
